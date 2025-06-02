@@ -1,0 +1,27 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Js Problem</title>
+</head>
+
+<body>
+     <script>
+          let b = prompt("Enter the text you want to display");
+          let a = prompt("Enter a number");
+          a = Number(a);
+          let result;
+
+          for (let i = 0; i < a; i++) {
+               result = b;
+               const output = document.createElement("p");
+               output.style.fontSize = "20px";
+               output.textContent = result;
+               document.body.appendChild(output);
+          }
+     </script>
+</body>
+
+</html>
