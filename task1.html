@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>JS Problem</title>
+</head>
+
+<body>
+     <script>
+          let a = prompt("Enter a number"); 
+          a = Number(a);
+
+          let result;
+
+          if (!isNaN(a)) {
+               if (a > 0) {
+                    result = "The number is positive";
+               } else if (a < 0) {
+                    result = "The number is negative";
+               } else {
+                    result = "The number is zero";
+               }
+          } else {
+               result = "Invalid input, please enter a valid number";
+          }
+
+          const output = document.createElement("p");
+          output.textContent = result;
+          output.style.fontSize = "60px";
+          document.body.appendChild(output);
+     </script>
+</body>
+
+</html>
